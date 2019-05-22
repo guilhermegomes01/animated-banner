@@ -1,0 +1,99 @@
+html, body {
+    margin: 0; padding: 0;
+  }
+
+  .hero-bkg-animated {
+    background: url('Background\ da\ Home\ 01.png') no-repeat;
+  }
+
+  .hero-bkg-animated .bg3 {
+      background-image: linear-gradient(to bottom right, #22B573, #00A99D);
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      opacity: 0.2;
+      width: 100%;
+      z-index: 9;
+  }
+  .hero-bkg-animated .bg4 {
+    background-image: linear-gradient(to bottom, gray 25%, black);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    opacity: 0.4;
+    width: 100%;
+    z-index: 10;
+}
+
+  .hero-bkg-animated .bg1 {
+    background: url('Background\ da\ Home\ 01.png') no-repeat;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+
+  .hero-bkg-animated > .bg2 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background: url('Background\ da\ Home\ 02.png') no-repeat;
+        -webkit-animation: opacidade 5s linear infinite;
+    }
+
+    .hero-bkg-animated .bg5 {
+        -webkit-animation: slide 10s infinite alternate-reverse;
+    }
+
+    .hero-bkg-animated .bg6 {
+      top: 20% !important;
+      left: 25% !important;
+    }
+
+  .hero-bkg-animated .ast {     
+      width: 300px;
+      height: 300px;
+      background: url('Astronauta\ 02.png') no-repeat center center;
+      background-size: 80%;
+      -webkit-animation: slide2 50s infinite;
+      animation-direction: alternate-reverse;
+  }
+
+  @media (max-width: 992px) {
+    .hero-bkg-animated .ast {
+        width: 220px;
+        height: 230px;
+    }
+    .hero-bkg-animated .bg5 {
+        left: 17%;
+    }
+  }
+
+  @-webkit-keyframes slide {
+      from { transform: translateY(0px); }
+      to { transform: translateY(30px); }
+  }
+
+  @-webkit-keyframes slide2 {
+    from { transform: rotate(0deg);
+    }
+    to { transform: rotate(30deg);
+        }
+}
+
+
+  @-webkit-keyframes opacidade {
+        0%   {opacity: 0;}
+        25%  {opacity: .8;}
+        50%  {opacity: 0;}
+        75%  {opacity: .8;}
+        100% {opacity: 0;}
+    }
+
+    @-webkit-keyframes opacidade2 {
+        0%   {opacity: 0.5;}
+        25%  {opacity: 0;}
+        50%  {opacity: 0.5;}
+        75%  {opacity: 0;}
+        100% {opacity: 0.5;}
+    }
