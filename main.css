@@ -64,8 +64,8 @@ html, body {
         width: 220px;
         height: 230px;
     }
-    .hero-bkg-animated .bg5 {
-        left: 17%;
+    .hero-bkg-animated .bg6 {
+        left: 17% !important;
     }
   }
 
